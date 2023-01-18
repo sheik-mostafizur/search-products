@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fontawesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+
+    <!-- main style -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <title>search product</title>
+  </head>
+  <body>
+    <main class="container">
+      <form>
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input
+          type="text"
+          name=""
+          id="search-item"
+          placeholder="Search products"
+          onkeyup="search()" />
+      </form>
+      <section class="product-list" id="product-list">
+        <!-- t-shirt -->
+        <div class="product">
+          <img src="./assets/images/t-shirt-1.png" alt="t-shirt-1" />
+          <div class="p-details">
+            <h2>Black Tshirt</h2>
+            <h3>$121</h3>
+          </div>
+        </div>
+        <div class="product">
+          <img src="./assets/images/t-shirt-2.png" alt="t-shirt-2" />
+          <div class="p-details">
+            <h2>White Tshirt</h2>
+            <h3>$222</h3>
+          </div>
+        </div>
+        <div class="product">
+          <img src="./assets/images/t-shirt-3.png" alt="t-shirt-3" />
+          <div class="p-details">
+            <h2>Green Tshirt</h2>
+            <h3>$323</h3>
+          </div>
+        </div>
+        <div class="product">
+          <img src="./assets/images/t-shirt-4.png" alt="t-shirt-4" />
+          <div class="p-details">
+            <h2>Red and white Tshirt</h2>
+            <h3>$424</h3>
+          </div>
+        </div>
+        <div class="product">
+          <img src="./assets/images/t-shirt-5.png" alt="t-shirt-5" />
+          <div class="p-details">
+            <h2>Tshirt</h2>
+            <h3>$525</h3>
+          </div>
+        </div>
+
+        <!-- bags -->
+        <div class="product">
+          <img src="./assets/images/bag-1.png" alt="bag-1" />
+          <div class="p-details">
+            <h2>Bags</h2>
+            <h3>$12</h3>
+          </div>
+        </div>
+        <div class="product">
+          <img src="./assets/images/bag-2.png" alt="bag-2" />
+          <div class="p-details">
+            <h2>Red Bag</h2>
+            <h3>$22</h3>
+          </div>
+        </div>
+        <div class="product">
+          <img src="./assets/images/bag-3.png" alt="bag-3" />
+          <div class="p-details">
+            <h2>Bag</h2>
+            <h3>$32</h3>
+          </div>
+        </div>
+        <div class="product">
+          <img src="./assets/images/bag-4.png" alt="bag-4" />
+          <div class="p-details">
+            <h2>Red Bag</h2>
+            <h3>$42</h3>
+          </div>
+        </div>
+        <div class="product">
+          <img src="./assets/images/bag-5.png" alt="bag-5" />
+          <div class="p-details">
+            <h2>Bag</h2>
+            <h3>$52</h3>
+          </div>
+        </div>
+        <div class="product">
+          <img src="./assets/images/bag-6.png" alt="bag-6" />
+          <div class="p-details">
+            <h2>Sky Bag</h2>
+            <h3>$62</h3>
+          </div>
+        </div>
+
+        <!-- shoe -->
+        <div class="product">
+          <img src="./assets/images/shoe-1.png" alt="shoe-1" />
+          <div class="p-details">
+            <h2>Red Shoe</h2>
+            <h3>$12</h3>
+          </div>
+        </div>
+        <div class="product">
+          <img src="./assets/images/shoe-2.png" alt="shoe-2" />
+          <div class="p-details">
+            <h2>Shoe</h2>
+            <h3>$22</h3>
+          </div>
+        </div>
+        <div class="product">
+          <img src="./assets/images/shoe-3.png" alt="shoe-3" />
+          <div class="p-details">
+            <h2>Shoe</h2>
+            <h3>$32</h3>
+          </div>
+        </div>
+        <div class="product">
+          <img src="./assets/images/shoe-4.png" alt="shoe-4" />
+          <div class="p-details">
+            <h2>Blue Shoe</h2>
+            <h3>$42</h3>
+          </div>
+        </div>
+
+        <!-- clock -->
+        <div class="product">
+          <img src="./assets/images/clock-1.png" alt="clock-1" />
+          <div class="p-details">
+            <h2>Clock</h2>
+            <h3>$21</h3>
+          </div>
+        </div>
+        <div class="product">
+          <img src="./assets/images/clock-2.png" alt="clock-2" />
+          <div class="p-details">
+            <h2>Clock</h2>
+            <h3>$22</h3>
+          </div>
+        </div>
+        <div class="product">
+          <img src="./assets/images/clock-3.png" alt="clock-3" />
+          <div class="p-details">
+            <h2>Golden Clock</h2>
+            <h3>$23</h3>
+          </div>
+        </div>
+        <div class="product">
+          <img src="./assets/images/clock-4.png" alt="clock-4" />
+          <div class="p-details">
+            <h2>Clock</h2>
+            <h3>$24</h3>
+          </div>
+        </div>
+        <div class="product">
+          <img src="./assets/images/clock-5.png" alt="clock-5" />
+          <div class="p-details">
+            <h2>Clock</h2>
+            <h3>$25</h3>
+          </div>
+        </div>
+
+        <!-- hoodie -->
+        <div class="product">
+          <img src="./assets/images/hoodie-1.png" alt="hoodie-5-1" />
+          <div class="p-details">
+            <h2>Hoodie</h2>
+            <h3>$41</h3>
+          </div>
+        </div>
+        <div class="product">
+          <img src="./assets/images/hoodie-2.png" alt="hoodie-5-2" />
+          <div class="p-details">
+            <h2>Red Hoodie</h2>
+            <h3>$42</h3>
+          </div>
+        </div>
+        <div class="product">
+          <img src="./assets/images/hoodie-3.png" alt="hoodie-5-3" />
+          <div class="p-details">
+            <h2>Hoodie</h2>
+            <h3>$43</h3>
+          </div>
+        </div>
+        <div class="product">
+          <img src="./assets/images/hoodie-4.png" alt="hoodie-5-4" />
+          <div class="p-details">
+            <h2>Hoodie</h2>
+            <h3>$44</h3>
+          </div>
+        </div>
+        <div class="product">
+          <img src="./assets/images/hoodie-5.png" alt="hoodie-5-5" />
+          <div class="p-details">
+            <h2>Hoodie</h2>
+            <h3>$45</h3>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>
+
+<!-- power by
+https://youtu.be/ZFUOC-y4i0s
+-->
